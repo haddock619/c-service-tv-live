@@ -1,14 +1,22 @@
-const player = document.getElementById("player");
-const channelsDiv = document.getElementById("channels");
-
 const channels = [
-  {name: "Chaîne 1", link: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"},
-  {name: "Chaîne 2", link: "https://test-streams.mux.dev/test_001/stream.m3u8"}
+  {name: "RTNC Congo", link: "https://rtng.live/stream.m3u8"},
+  {name: "France 24 FR", link: "https://static.france24.com/live/F24_FR_FR_main.m3u8"},
+  {name: "BBC News", link: "https://news-bbc-uk-live.m3u8"},
+  {name: "TV5 Monde", link: "https://tv5monde.m3u8"},
+  {name: "Al Jazeera", link: "https://live-hls-web-aje.getaj.net/AJE/index.m3u8"},
+  {name: "ESPN", link: "https://espn.live/stream.m3u8"},
+  {name: "SuperSport", link: "https://supersport.m3u8"},
+  {name: "Canal+ Afrique", link: "https://canalplus-afrique.m3u8"},
+  {name: "StarTimes Info", link: "https://startimes.info/live.m3u8"},
+  {name: "National Geographic", link: "https://natgeo.m3u8"},
+  {name: "Cine+ Films", link: "https://cineplus.m3u8"},
+  {name: "Disney Channel", link: "https://disneych.m3u8"},
+  {name: "MTV Africa", link: "https://mtvafrica.m3u8"},
+  {name: "Trace Urban", link: "https://traceurban.m3u8"},
+  {name: "BBC World", link: "https://bbcworld.m3u8"},
+  {name: "France 24 EN", link: "https://static.france24.com/live/F24_EN_main.m3u8"},
+  {name: "CNN", link: "https://cnn.m3u8"},
+  {name: "Euronews", link: "https://euronews.m3u8"},
+  {name: "TV Cultura", link: "https://tvcultura.m3u8"},
+  {name: "ARTE", link: "https://arte.m3u8"}
 ];
-
-channels.forEach(channel => {
-  const btn = document.createElement("button");
-  btn.textContent = channel.name;
-  btn.onclick = () => player.src = channel.link;
-  channelsDiv.appendChild(btn);
-});
