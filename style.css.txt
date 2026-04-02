@@ -1,0 +1,14 @@
+body {
+  background: black;
+  color: gold;
+  text-align: center;
+  font-family: Arial;
+}
+
+button {
+  background: gold;
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
